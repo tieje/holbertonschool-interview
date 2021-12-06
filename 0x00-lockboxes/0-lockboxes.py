@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 '''
-You have n number of locked boxes in front of you. Each box is numbered sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
-Write a method that determines if all the boxes can be opened.
+You have n number of locked boxes in front of you.
+Each box is numbered sequentially from 0 to n - 1
+and each box may contain keys to the other boxes.
+Write a method that determines if all the boxes
+can be opened.
 '''
 
 
@@ -24,13 +27,14 @@ def canUnlockAll_helper(d, key_list):
                 d[i]['unlocked'] = True
                 canUnlockAll_helper(d, d[i]['keys'])
         except KeyError:
-            # Means that a key without a box was presented
+            # Means a key without a box
             pass
 
 
 def canUnlockAll(boxes):
     '''
-    Returns True or False depending on if all boxes were unlocked
+    Returns True or False depending on if all boxes
+    were unlocked
     '''
     n_box = len(boxes)
     if n_box == 1:
