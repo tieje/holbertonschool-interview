@@ -7,6 +7,7 @@ Write a method that determines if all the boxes
 can be opened.
 
 My initial solution below
+'''
 
 
 def unlockTest(d, n):
@@ -43,10 +44,11 @@ def canUnlockAll(boxes):
     # debug
     # print(box_dict)
     return(unlockTest(box_dict, n_box))
-'''
 
+
+'''
 def canUnlockAll(boxes):
-    '''can all the boxes be unlocked?'''
+    # can all the boxes be unlocked?
     if (boxes is None):
         return False
     boxCount = len(boxes)
@@ -63,3 +65,4 @@ def canUnlockAll(boxes):
     if (len(keys) == boxCount):
         return True
     return False
+'''
