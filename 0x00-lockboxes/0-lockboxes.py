@@ -36,6 +36,8 @@ def canUnlockAll(boxes):
     Returns True or False depending on if all boxes
     were unlocked
     '''
+    if (boxes is None):
+        return False
     n_box = len(boxes)
     if n_box == 1:
         return True
