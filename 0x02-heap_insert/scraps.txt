@@ -1,0 +1,28 @@
+	while (current->left != NULL && current->right != NULL)
+	{
+		if (value > current->n)
+		{
+			if (current->right != NULL)
+			{
+				current = current->right;
+			}
+			else
+			{
+				current->right = new_node;
+				break;
+			}
+		}
+		else if (value < current->n)
+		{
+			if (current->left != NULL)
+			{
+				current = current->left;
+			}
+			else
+			{
+				current->left = new_node;
+				break;
+			}
+		}
+	}
+
