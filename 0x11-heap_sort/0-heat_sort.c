@@ -1,6 +1,4 @@
 #include "sort.h"
-
-
 /**
  * heapify - recersive sorting of array
  * @array: input list
